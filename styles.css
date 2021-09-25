@@ -1,0 +1,272 @@
+
+/* General */
+*{
+    margin: 0px;
+    scroll-behavior: smooth;
+    padding: 0px;
+}
+
+/* Colores */
+:root{
+    --main-pastel-red:#e63946;
+    --main-whiter-grey:#f5f5f5;
+    --main-white:#fafaff;
+    --main-ultra-dark-grey:rgb(33,37,41);
+    --main-dark-grey:#202125;
+}
+body{
+    background-color: var(--main-dark-grey);
+}
+
+
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 90vh;
+
+
+}
+.bienvenida-img img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 9%;
+    padding: 2%;
+    border-radius: 18px;
+
+
+}
+
+
+.bienvenida-text{
+    width: 55%;
+    height: 55vh;
+    margin: 5% 2%;
+    background-color: var(--main-dark-grey);
+    box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 24px 1px rgba(0,0,0,0.56);
+    color: var(--main-whiter-grey);
+    border-bottom: 1px solid var(--main-dark-grey);
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.bienvenido{
+    text-align: left;
+    padding-top: 8%;
+    font-weight: normal;
+    font-family: 'Spartan', sans-serif;
+    font-size: 4em;
+    color: var(--main-whiter-grey);
+
+}
+.button-bienvenida{
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    background-color: var(--main-pastel-red);
+    border-radius: 5px;
+    border: none;
+    color: var(--main-whiter-grey);
+
+    font-size: 1.2em;
+    padding: 1%;
+    width: 150px;
+    cursor: pointer;
+}
+.logo{
+  width: 200px;
+  margin-right: auto;
+
+
+}
+
+
+header h2{
+    margin-top: 1em;
+    font-size: 1.6em;
+    text-align: left;
+    padding-top: 0.3em;
+    padding-left: 6px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: lighter;
+
+}
+header h3{
+    
+    font-size: 1.6em;
+    text-align: left;
+    padding-left: 6px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: lighter;
+}
+
+.box-son{
+    display: inline-block;
+    font-family: 'Spartan', sans-serif  ;
+    font-size: 1.1em;
+    font-weight: lighter;
+
+   
+}
+.box-son a{
+    padding: 15px 20px;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight:normal; 
+    color: var(--main-whiter-grey);
+}
+
+.logo{
+    height: 100%;
+}
+nav{ 
+    z-index: 20;
+    position: sticky;
+    top:0px;
+    background-color: var(--main-ultra-dark-grey);
+}
+.box-flex{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    padding: 1.4%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-son :hover{
+    background-color: var(--main-pastel-red);
+    color: #f4f7f8;
+    border-radius: 5px;
+}
+/* Main */
+
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Sobre mi */
+
+.sobre-mi{
+    margin-top: 3%;
+    height: 75vh;
+}
+
+.contenido_principal{
+    font-family: 'Spartan', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #2f3640;
+    justify-content: space-evenly;
+}
+.icon{
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    color: var(--main-dark-grey);
+}
+.icon-html{
+    color: #f36428;
+}
+.icon-css{
+    color: #3399fe
+    ;
+}
+.icon-bootstrap{
+    color: #7b11f9
+    ;
+}
+.icon-learn{
+    margin: 2%;
+    font-size: 2.5em;
+}
+.container-icon-learn{
+    text-align: center;
+}
+img.description-image{
+    display: block;
+    width: 20vh;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description-son{
+    padding: 1%;
+    background-color: var(--main-whiter-grey);
+    width: 28%;
+    border-radius: 5px;
+}
+.description-son h3{
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.contenido_principal p{
+    font-size: 1.1em;
+}
+.titulo h2{
+    margin: auto;
+    font-size: 2.3em;
+    margin-bottom: 5vh;
+    text-align: center;
+     font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    color: var(--main-whiter-grey);
+    letter-spacing: 3px;
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    .contenido_principal{
+       font-size: 10px;
+       flex-direction: column;
+    }
+    .bienvenido{
+        font-size: 7vh;
+    }
+    .contenido_principal img{
+        margin: 0 0 5vh 0;
+
+    }
+    .contenido_principal p{
+        text-align: center;
+    }
+    .titulo h2{
+        margin-top: 10vh;
+    }
+    nav{
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    nav ul{
+         font-size: 4vh;
+         padding: 0px;
+    }
+    nav ul li{
+        padding: 8.5vh;
+    }
+    .head{
+        height: 100vh;
+    }
+}
