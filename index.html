@@ -20,29 +20,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <nav>
         <ul class="box-flex">
             <img src="./assets/b7744998b58d4fd1adbe956689074538 (1).png" class="logo" alt="">
-            <li class="box-son"><a href="#title" class="">Sobre Mi</a></li>
-            <li class="box-son"><a href="">Proyectos</a></li>
-            <li class="box-son"><a href="">Contacto</a></li>
+
+            <div class="menu-responsive">
+                <i class="fal fa-bars icon-menu"></i>
+                <div class="menu-dropdown">
+                    <li class="box-son"><a href="#title" class="">Sobre Mi</a></li>
+                    <li class="box-son"><a href="">Proyectos</a></li>
+                    <li class="box-son"><a href="">Contacto</a></li>
+                </div>
+
+            </div>
+
         </ul>
     </nav>
 
- 
         <header>
-            <div class="bienvenida-text">
-                <h1 class="bienvenido">Bienvenido!</h1>
-                <h2>Les doy la bienvenida a mi humilde Portafolio</h2>
-                <h3>Mi Nombre es Joaquin Baraldo</h3>
-                <button class="button-bienvenida hvr-grow">
-                    <p>Ver Mas</p>
-                </button>
-            </div>
+
+
+
+            <div class="bienvenida-container">
+
+                <div class="bienvenida-text">
+
+                    <h1 class="bienvenido">Bienvenido!</h1>
+
+                    <h2>Soy Un Diseñador Front End.</h2>
+
+                    <h3>Mi Nombre es Joaquin Baraldo</h3>
+
+                    <button class="button-bienvenida hvr-shrink">
+                        <p>
+                            <a href="#title" class="button-bienvenida-link">Ver Mas</a>
+                        </p>
+                    </button>
+
+                </div>
             
             <div class="bienvenida-img">
                 <img  src="./assets/undraw_Portfolio_update_re_jqnp (4).svg" alt="">
             </div>
+
+        </div>
+            
         </header>
 
 
@@ -52,7 +75,7 @@
                 <h2 >Sobre Mi</h2>
             </article>
             <article class="contenido_principal">
-                <div class="description-son">
+                <div class="description-son hvr-float">
 
                     <i class="fal fa-book-user icon"></i>
 
@@ -62,7 +85,7 @@
 
 
                 </div>
-                <div class="description-son">
+                <div class="description-son hvr-float">
 
                     <i class="fal fa-clipboard-list-check icon"></i>
 
@@ -70,7 +93,7 @@
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto consequatur recusandae natus dolores nihil! Sed quibusdam non perferendis voluptate sapiente laborum nostrum illo, quo id beatae! Voluptatem, tenetur illum.</p>
                 </div>
-                <div class="description-son">
+                <div class="description-son hvr-float">
 
                     <i class="fal fa-chalkboard-teacher icon"></i>
 
@@ -88,9 +111,36 @@
             </article>
 
         </section>
-          
-        
 
+        <section class="proyects">
+
+        <h2 class="proyects-title">Mis proyectos</h2>
+        
+        <div class="proyectos-father">
+
+            <article class="proyect hvr-grow">
+                <a href="">
+                    <img src="./assets/Captura1.PNG " alt="" class="image-proyect ">
+                </a>
+                <p class="description-proyect position-1">Ecomerce de Marvel.</p>
+            </article>
+
+            <article class="proyect hvr-grow">
+                <a href="">
+                    <img src="./assets/Captura2.PNG " alt="" class="image-proyect ">
+                </a>
+                <p class="description-proyect position-2">Diario de Bethestha.</p>
+            </article>
+
+            
+            <article class="proyect hvr-grow">
+                <a href="">
+                    <img src="./assets/Captura5.PNG " alt="" class="image-proyect ">
+                </a>
+                <p class="description-proyect position-3">Ecomerce de PC's.</p>
+            </article>
+        </section>
+        </div>         
     </main>
 
 
